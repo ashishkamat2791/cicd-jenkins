@@ -34,7 +34,7 @@ docker build -t loan_pred:v1 .
 docker build -t manifoldailearning/cicd:latest . 
 docker push manifoldailearning/cicd:latest
 
-docker run -d -it --name modelv1 -p 8005:8005 manifoldailearning/cicd:latest bash
+docker run -d -it --name modelv1 -p 8005:8005 ashishkamat2791/mlops-cicd:latest bash
 
 docker exec modelv1 python prediction_model/training_pipeline.py
 
@@ -97,8 +97,8 @@ sudo usermod -a -G docker $USER
 ```
 
 ```
-git clone https://github.com/manifoldailearning/ml-ci-cd-test.git
-cd ml-ci-cd-test
+git clone https://github.com/ashishkamat2791/ci-cd-jenkins.git
+cd ci-cd-jenkins
 
 ```
 
